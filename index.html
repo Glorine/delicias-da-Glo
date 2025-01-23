@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário da Encomenda</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav id="top"></nav>
+    <div class="container">
+        <div class="content">
+            <img src="images/Logo.jpg" alt="Logo" class="img-perfil">
+            <div style="display: flex; flex-direction: column; align-items: center; margin-top: 20px;">
+                <img src="images/icons/form.png" width="40" height="40">
+                <h2>Preencha o formulário da encomenda</h2>
+            </div>
+            <h5>Todos os campos devem ser preenchidos</h5>
+            <section>
+                <div class="inputs column">
+                    <label for="">Nome do Cliente</label>
+                    <input type="text" placeholder="Digite seu nome completo" id="nomeCliente">
+                </div>
+                <div class="inputs column">
+                    <label for="">Data da encomenda</label>
+                    <input type="date" id="dataEncomenda" requiredd>
+                </div>
+                <div class="inputs column">
+                    <label for="">Horário de entrega</label>
+                    <input type="time" id="horarioEntrega" requiredd>
+                </div>
+                <div class="inputs column">
+                    <label for="">Número do cliente</label>
+                    <input type="number" id="numeroCliente" placeholder="+244..." requiredd>
+                </div>
+                <div class="inputs">
+
+                </div>
+            </section>
+            <h3>Monte seu Bolo</h3>
+            <section>
+                <div class="inputs column">
+                    <button class="btn-expand" id="expand" onclick="expand();">Cores do Bolo</button>
+                    <div class="expand-area">
+                        <div class="area-inline close" id="area-inline">
+
+                        </div>
+                        <br>
+                        <label for="cakeColors">Não encontrou, ou quer adicionar mais alguma cor? Escreva aqui:</label>
+                        <input type="text" id="cakeColors" placeholder="Escreva manualmente a cor que deseja">
+                    </div>
+                    <!--<input type="text" id="cakeColors" placeholder="ex:.Rosa, azul, etc...">-->
+                </div>
+                <div class="inputs column">
+                    <label for="" class="">Tipo de cobertura</label>
+                    <select name="" id="cobertura" class="">
+                        <option value="Ganache">Ganache</option>
+                        <option value="Chantilly">Chantilly</option>
+                    </select>
+                </div>
+                <div class="inputs column">
+                    <label for="">Recheios</label>
+                    <select name="" id="recheios" class="">
+                            <option value="Doce de leite">Doce de leite</option>
+                            <option value="Canela">Canela</option>
+                            <option value="Limão">Limão</option>
+                            <option value="Café">Café</option>
+                            <option value="Prestígio">Prestígio</option>
+                            <option value="Doce de leite com ginguba">Doce de leite com ginguba</option>
+                            <option value="Brigadeiro branco com coco">Brigadeiro branco com coco</option>
+                            <option value="Brigadeiro negro">Brigadeiro negro</option>
+                            <option value="Brigadeiro de maracujá">Brigadeiro de maracujá</option>
+                            <option value="Coco queimado e doce de leite">Coco queimado e doce de leite</option>
+                        </select>
+                </div>
+                <div class="inputs column">
+                    <label for="">Massas</label>
+                    <select name="" id="massas" class="">
+                            <option value="Canela e chocolate">Canela e chocolate</option>
+                            <option value="Canela e baunilha">Canela e baunilha</option>
+                            <option value="Redvelvet e baunilha">Redvelvet e baunilha</option>
+                            <option value="Limão e canela">Limão e canela</option>
+                            <option value="Chocolate">Chocolate</option>
+                            <option value="Laranja">Laranja</option>
+                            <option value="Coco e laranja">Coco e laranja</option>
+                            <option value="Limão com semente de papoila">Limão com semente de papoila</option>
+                            <option value="Banana e canela">Banana e canela</option>
+                            <option value="Cenoura">Cenoura</option>
+                    </select>
+                </div>
+                <h5>
+                    <p>Observação: Só pode escolher uma opção de massa e duas de recheio, para os bolos sem andares.</p>
+                    <p>Validaremos a encomenda após o pagamento de 50%. A recepção da encomenda só é feita após feito todo pagamento.</p>
+                    <p>Para melhor segurança, as coordenadas bancárias serão enviadas pelo <a href="https://wa.me/922585060" onclick="open()" class="WAlink">whatsapp</a>.</p>
+                </h5>
+                <div class="inputs">
+                    <button class="btn-send" onclick="SendMessage()">Enviar</button>
+                </div>
+                <div class="ul">
+                    <li>
+                        <img src="images/icons/facebook.png" alt="instagram" class="mini-icon">
+                        <a href="https://www.facebook.com/Deliciasdaglo?mibextid=JRoKGi" target="_blank" class="social-links">
+                        Facebook
+                    </a>
+                    </li>
+                    <li>
+                        <img src="images/icons/instagram.png" target="_blank" alt="instagram" class="mini-icon">
+                        <a href="https://www.instagram.com/deliciasdaglo?igsh=MTFybWdqOHp0ZmkzZQ==" class="social-links">
+                        Instagram
+                    </a>
+                    </li>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer>
+        Delícias da Glo
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+<!--// Fim :) Delícias  da Glo
+//Por Ny-->

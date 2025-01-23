@@ -1,0 +1,270 @@
+* {
+    outline: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    background-image: url(images/IMG6.jpg);
+    background-position: center;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    animation: background-anim 100s alternate infinite;
+}
+
+@keyframes background-anim {
+    to {
+        background-position: 100px 500px;
+    }
+}
+
+.img-perfil {
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    width: 80%;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h5 {
+    margin-top: 0px;
+}
+
+.img-perfil {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.inputs {
+    margin: 10px 0px;
+    padding: 4px;
+    display: flex;
+    animation: appear ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(100px);
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.column {
+    flex-direction: column;
+}
+
+.no-column {
+    display: inline-flex;
+}
+
+.inputs label {
+    margin: 8px 0px;
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.inputs input[type="text"],
+.inputs input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.inputs input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+}
+
+.inputs input[type="time"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+}
+
+.inputs select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.btn-expand,
+.btn-colors {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-colors {
+    width: calc(23% - 2px);
+    height: 40px;
+    max-width: 25%;
+    transition: all .5s;
+    margin: 8px 2px;
+    border: 1px solid #0000001a;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+@keyframes showBtn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.btn-colors:hover {
+    transform: scale(1.1);
+}
+
+.expand-area {
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.expand {
+    height: 250px;
+}
+
+.area-inline {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#cakeColors {
+    width: 80%;
+}
+
+.no-column-select {
+    max-width: 160px;
+}
+
+.btn-send {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 500;
+    background: #fb496d;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.msg-card {
+    width: 250px;
+    height: 20px;
+    padding: 10px;
+    background: #ff3333;
+    color: #fff;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 4px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.WAlink {
+    color: #292929d1;
+}
+
+.reveal {
+    animation: msg-card-reveal 1s ease-in-out 1 forwards;
+}
+
+.hidden {
+    animation: msg-card-reveal .5s reverse 1 forwards;
+}
+
+@keyframes msg-card-reveal {
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    margin-top: 120px;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.social-links {
+    color: #fff;
+    font-weight: 200;
+    margin: 0 5px;
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.mini-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+
+/* Fim :) Delícias  da Glo
+//Por Ny*/
